@@ -9,7 +9,13 @@
 
 <ion-content>
   <ion-card>
-    <img alt="img number 1" src="assets/img/img1.png" />
+    <img id="open-custom-dialog" expand="block" alt="img number 1" src="assets/img/img1.png" />
+    <ion-modal id="example-modal" #modal trigger="open-custom-dialog">
+      <ng-template>
+        <ion-button (click)="modal.dismiss()">Close</ion-button>
+          <img alt="img number 1" src="assets/img/img1.png" />
+      </ng-template>
+    </ion-modal>
     <ion-card-header>
       <ion-card-title>Inbox</ion-card-title>
     </ion-card-header>
