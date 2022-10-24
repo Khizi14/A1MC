@@ -24,13 +24,11 @@
     </ion-card-content>
   </ion-card>
   <ion-card>
-    <img id="open-modal" expand="block" alt="img number 1" src="assets/img/img1.png" />
-    <ion-modal #modal trigger="open-modal">
+    <img id="open-modal1" expand="block" alt="img number 2" src="assets/img/img2.png" />
+    <ion-modal #modal trigger="open-modal1">
       <ng-template>
-        <ion-buttons slot="end">
-          <ion-button color="dark" (click)="modal.dismiss()">Close</ion-button>
-        </ion-buttons>
-          <img alt="img number 1" src="assets/img/img1.png" />
+        <ion-button (click)="modal.dismiss()">Close</ion-button>
+          <img alt="img number 2" src="assets/img/img2.png" />
       </ng-template>
     </ion-modal>
     <ion-card-header>
@@ -40,5 +38,4 @@
       Inbox tab where all the contact messages can be previewed.
     </ion-card-content>
   </ion-card>
-
 </ion-content>
