@@ -9,8 +9,8 @@
 
 <ion-content>
   <ion-card>
-    <img id="open-custom-dialog" expand="block" alt="img number 1" src="assets/img/img1.png" />
-    <ion-modal id="example-modal" #modal trigger="open-custom-dialog">
+    <img id="open-modal" expand="block" alt="img number 1" src="assets/img/img1.png" />
+    <ion-modal #modal trigger="open-modal">
       <ng-template>
         <ion-button (click)="modal.dismiss()">Close</ion-button>
           <img alt="img number 1" src="assets/img/img1.png" />
@@ -24,39 +24,21 @@
     </ion-card-content>
   </ion-card>
   <ion-card>
-    <img alt="img number 2" src="assets/img/img2.png" />
+    <img id="open-modal" expand="block" alt="img number 1" src="assets/img/img1.png" />
+    <ion-modal #modal trigger="open-modal">
+      <ng-template>
+        <ion-buttons slot="end">
+          <ion-button color="dark" (click)="modal.dismiss()">Close</ion-button>
+        </ion-buttons>
+          <img alt="img number 1" src="assets/img/img1.png" />
+      </ng-template>
+    </ion-modal>
     <ion-card-header>
-      <ion-card-title>Chat</ion-card-title>
+      <ion-card-title>Inbox</ion-card-title>
     </ion-card-header>
     <ion-card-content>
-      Window to chat with prefered contact.
+      Inbox tab where all the contact messages can be previewed.
     </ion-card-content>
   </ion-card>
-  <ion-card>
-    <img alt="img number 2" src="assets/img/img7.png" />
-    <ion-card-header>
-      <ion-card-title>Status</ion-card-title>
-    </ion-card-header>
-    <ion-card-content>
-      Show others status and can upload your own.
-    </ion-card-content>
-  </ion-card>
-  <ion-card>
-    <img alt="img number 3" src="assets/img/img3.png" />
-    <ion-card-header>
-      <ion-card-title>Profile</ion-card-title>
-    </ion-card-header>
-    <ion-card-content>
-      Shows your Picture, Name & About.
-    </ion-card-content>
-  </ion-card>
-  <ion-card>
-    <img alt="img number 4" src="assets/img/img4.png" />
-    <ion-card-header>
-      <ion-card-title>Setting</ion-card-title>
-    </ion-card-header>
-    <ion-card-content>
-      Window where you can update your Theme, notification and many other things of the application.
-    </ion-card-content>
-  </ion-card>
+
 </ion-content>
