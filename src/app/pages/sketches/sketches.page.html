@@ -9,8 +9,8 @@
 
 <ion-content>
   <ion-card>
-    <img id="open-modal" expand="block" alt="img number 1" src="assets/img/img1.png" />
-    <ion-modal #modal trigger="open-modal">
+    <img id="image1" expand="block" alt="img number 1" src="assets/img/img1.png" />
+    <ion-modal #modal trigger="image1">
       <ng-template>
         <ion-button (click)="modal.dismiss()">Close</ion-button>
           <img alt="img number 1" src="assets/img/img1.png" />
@@ -24,8 +24,8 @@
     </ion-card-content>
   </ion-card>
   <ion-card>
-    <img id="open-modal1" expand="block" alt="img number 2" src="assets/img/img2.png" />
-    <ion-modal #modal trigger="open-modal1">
+    <img id="image2" expand="block" alt="img number 2" src="assets/img/img2.png" />
+    <ion-modal #modal trigger="image2">
       <ng-template>
         <ion-button (click)="modal.dismiss()">Close</ion-button>
           <img alt="img number 2" src="assets/img/img2.png" />
