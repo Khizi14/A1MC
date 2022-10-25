@@ -12,7 +12,7 @@
     <img id="image8" expand="block" src="assets/img/img8.png" alt="Img number 8"/>
       <ion-modal #modal8 trigger="image8">
         <ng-template>
-          <ion-button>Close</ion-button>
+          <ion-button (click)="modal8.dismiss()">Close</ion-button>
         </ng-template>
       </ion-modal>
   </ion-card>
