@@ -20,7 +20,7 @@
         <ion-card-title>Login</ion-card-title>
       </ion-card-header>
       <ion-card-content>
-        Login Screen which required "User Name" & "Password" to login.
+        Login Screen which required "User Name" & "Password" to login or "Sign-up" option for new user.
       </ion-card-content>
   </ion-card>
   <ion-card>
@@ -50,7 +50,7 @@
       <ion-card-title>Doctors Type</ion-card-title>
     </ion-card-header>
     <ion-card-content>
-      Type of Doctor required for the user can be selected from here(The type of doctors might be in final project).
+      Type of Doctor required for the user can be selected from here(The type of doctors might be different in final project).
     </ion-card-content>
   </ion-card>
   <ion-card>
@@ -96,6 +96,21 @@
     </ion-card-header>
     <ion-card-content>
       After selecting a doctor user can book an appointment through this screen.
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <img id="image9" expand="block" alt="img number 4" src="assets/img/img9.png" />
+    <ion-modal #modal9 trigger="image9">
+      <ng-template>
+        <ion-button (click)="modal9.dismiss()">Close</ion-button>
+          <img alt="img number 9" src="assets/img/img9.png" />
+      </ng-template>
+    </ion-modal>
+    <ion-card-header>
+      <ion-card-title>Settings</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      User can change the mentioned things in settings tabs.
     </ion-card-content>
   </ion-card>
 </ion-content>
