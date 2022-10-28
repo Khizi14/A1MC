@@ -8,26 +8,39 @@
 </ion-header>
 
 <ion-content>
-  <header>Whatsapp</header>
-  <p>Today I will be talking about Whatsapp Pros and Cons as this application is being used world wide and the idea to my application also came from Whatsapp.</p>
+  <ion-card>
+    <img id="image11" expand="block" src="assets/img/img11.png" alt="Img number 11"/>
+      <ion-modal #modal11 trigger="image11">
+        <ng-template>
+          <ion-button (click)="modal11.dismiss()">Close</ion-button>
+            <img alt="img number 11" src="assets/img/img11.png"/>
+        </ng-template>
+      </ion-modal>
+      <ion-card-header>
+        <ion-card-title>zocdoc</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        Today I will talk about Zocdoc, an application which is being used to book appointments with doctors and then go to there office for the appointments. 
+      </ion-card-content>
+  </ion-card>
   <h2>Pros</h2>
   <ul>
-    <li><h1>User-Friendly</h1></li>
-    <li><h1>Audio And Video Calling</h1></li>
-    <li><h1>End-to-End Encryption</h1></li>
-    <li><h1>Ads Free</h1></li>
-    <li><h1>Free Of Cost</h1></li>
-    <li><h1>Delivery Status</h1></li>
-    <li><h1>Groups</h1></li>
+    <li><h1>ZocDoc puts together a list of participating doctors that are near your location-wise.</h1></li>
+    <li><h1>Another neat feature is that ZocDoc saves your profile and all of your past booking information.</h1></li>
+    <li><h1>End-to-End Encryption.</h1></li>
+    <li><h1>Patients can book appointments at all hours of the day.</h1></li>
+    <li><h1>The main benefit for doctors to use ZocDoc is that it is a form of marketing to help bring in new patients.</h1></li>
+    <li><h1>Shows Doctors profile.</h1></li>
+    <li><h1>Dose check insurance before appointment booking.</h1></li>
   </ul>
   <h2>Cons</h2>
   <ul>
-    <li><h1>WhatsApp Calling Limitation</h1></li>
-    <li><h1>File Size limit</h1></li>
-    <li><h1>No Animated Stickers</h1></li>
-    <li><h1>Deleted Messages Leave A Trace</h1></li>
+    <li><h1>No Chat option</h1></li>
+    <li><h1>Appointment timings are not matched with what is shown.</h1></li>
+    <li><h1>Appointments being double booked which creates mess.</h1></li>
+    <li><h1>Do not have wide range of doctors</h1></li>
     <li><h1>Can Be Hacked</h1></li>
     <li><h1>No Sign-out</h1></li>
   </ul>
-  <p>There are more pros then cons for Whatsapp but I want to make a application which can be accessed anywere as whatsapp is not useable in few country. Also having fun animated emotes which whatsapp dont have.User cant sign-out from Whatsapp which is the major thing I want to have in my application. </p>
+  <p>The Idea is to provide people services through chat and provide people a way to save their earnings rather than taking money from them for every action on application just to later find the appointment was cancelled.</p>
 </ion-content>
