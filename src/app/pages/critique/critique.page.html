@@ -6,16 +6,21 @@
     </ion-buttons>
   </ion-toolbar>
 </ion-header>
-
+<ion-modal #modal11 trigger="image11">
+  <ng-template>
+    <ion-button (click)="modal11.dismiss()">Close</ion-button>
+      <img class="center" alt="img number 11" src="assets/img/img11.png"/>
+  </ng-template>
+</ion-modal>
+<ion-modal #modal12 trigger="image12">
+  <ng-template>
+    <ion-button (click)="modal12.dismiss()">Close</ion-button>
+      <img class="center" alt="img number 11" src="assets/img/img12.png"/>
+  </ng-template>
+</ion-modal>
 <ion-content>
   <ion-card>
     <img id="image11" expand="block" src="assets/img/img11.png" alt="Img number 11"/>
-      <ion-modal #modal11 trigger="image11">
-        <ng-template>
-          <ion-button (click)="modal11.dismiss()">Close</ion-button>
-            <img alt="img number 11" src="assets/img/img11.png"/>
-        </ng-template>
-      </ion-modal>
       <ion-card-header>
         <ion-card-title>zocdoc</ion-card-title>
       </ion-card-header>
@@ -43,4 +48,16 @@
     <li><h1>No Sign-out</h1></li>
   </ul>
   <p>The Idea is to provide people services through chat and provide people a way to save their earnings rather than taking money from them for every action on application just to later find the appointment was cancelled.</p>
+  <ion-card>
+    <img id="image12" expand="block" src="assets/img/img12.png" alt="Img number 12"/>
+      <ion-card-header>
+        <ion-card-title>Dr on Demand</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        Today I will talk about Zocdoc, an application which is being used to book appointments with doctors and then go to there office for the appointments. 
+      </ion-card-content>
+  </ion-card>
 </ion-content>
+
+
+<!-- margin-bottom: 50%;; (img modal ky andar jo h ) -->
