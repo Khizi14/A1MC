@@ -1,0 +1,37 @@
+ion-content {
+    --background: rgb(10, 10, 10);
+}
+h2 {
+    color: rgb(59, 3, 3);
+    margin-left: 15px;
+    color: bisque;
+}
+h1 {
+    
+    font-style: italic;
+    font-size: medium;
+    color: white;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+p {
+    font-size: medium;
+    margin: 18px;
+    color: white;
+    font-style: italic;
+}
+header{
+    font-size: xx-large;
+    margin-left: 50px;
+    color: rgba(255, 217, 0, 0.795);
+    margin-top: 10px;
+}
+ul {
+    color: rgb(255, 255, 255);
+}
+ol {
+    color: rgb(255, 255, 255);
+}
+ion-toolbar {
+    --background: rgb(255, 255, 255);
+  }

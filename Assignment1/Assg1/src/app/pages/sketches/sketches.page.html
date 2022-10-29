@@ -1,0 +1,101 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Sketches</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button menu="main-menu"></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <img id="image8" expand="block" src="assets/img/img8.png" alt="Img number 8"/>
+      <ion-modal #modal8 trigger="image8">
+        <ng-template>
+          <ion-button (click)="modal8.dismiss()">Close</ion-button>
+            <img alt="img number 8" src="assets/img/img8.png"/>
+        </ng-template>
+      </ion-modal>
+      <ion-card-header>
+        <ion-card-title>Login</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        Login Screen which required "User Name" & "Password" to login or "Sign-up" option for new user.
+      </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <img id="image1" expand="block" alt="img number 1" src="assets/img/img1.png" />
+    <ion-modal #modal1 trigger="image1">
+      <ng-template>
+        <ion-button (click)="modal1.dismiss()">Close</ion-button>
+          <img alt="img number 1" src="assets/img/img1.png" />
+      </ng-template>
+    </ion-modal>
+    <ion-card-header>
+      <ion-card-title>Sign-Up</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      Sign-up form for new user.
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <img id="image2" expand="block" alt="img number 2" src="assets/img/img2.png" />
+    <ion-modal #modal2 trigger="image2">
+      <ng-template>
+        <ion-button (click)="modal2.dismiss()">Close</ion-button>
+          <img alt="img number 2" src="assets/img/img2.png" />
+      </ng-template>
+    </ion-modal>
+    <ion-card-header>
+      <ion-card-title>Doctors Type</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      Type of Doctor required for the user can be selected from here(The type of doctors might be different in final project).
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <img id="image3" expand="block" alt="img number 3" src="assets/img/img3.png" />
+    <ion-modal #modal3 trigger="image3">
+      <ng-template>
+        <ion-button (click)="modal3.dismiss()">Close</ion-button>
+          <img alt="img number 3" src="assets/img/img3.png" />
+      </ng-template>
+    </ion-modal>
+    <ion-card-header>
+      <ion-card-title>Doctors List</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      After selecting the Doctor type user will be given the list of Doctors to book an appointment with.
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <img id="image4" expand="block" alt="img number 4" src="assets/img/img4.png" />
+    <ion-modal #modal4 trigger="image4">
+      <ng-template>
+        <ion-button (click)="modal4.dismiss()">Close</ion-button>
+          <img alt="img number 4" src="assets/img/img4.png" />
+      </ng-template>
+    </ion-modal>
+    <ion-card-header>
+      <ion-card-title>Chat</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      Doctor and client chatting on the booked appointment time.
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <img id="image9" expand="block" alt="img number 4" src="assets/img/img9.png" />
+    <ion-modal #modal9 trigger="image9">
+      <ng-template>
+        <ion-button (click)="modal9.dismiss()">Close</ion-button>
+          <img alt="img number 9" src="assets/img/img9.png" />
+      </ng-template>
+    </ion-modal>
+    <ion-card-header>
+      <ion-card-title>Settings</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      User can change the mentioned things in settings tabs.
+    </ion-card-content>
+  </ion-card>
+</ion-content>
